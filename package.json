@@ -1,6 +1,6 @@
 {
   "name": "bulma-range",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display classic slider more sexy, in different colors, sizes, and states ",
   "main": "dist/js/bulma-slider.min.js",
   "style": "dist/css/bulma-slider.min.css",
@@ -71,6 +71,7 @@
   "files": [
     "dist/**",
     "src/**",
+    "_bulma-range.sass",
     "LICENSE",
     "README.md"
   ]
