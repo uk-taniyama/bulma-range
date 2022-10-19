@@ -1,6 +1,6 @@
 {
-  "name": "bulma-slider",
-  "version": "2.0.5",
+  "name": "bulma-range",
+  "version": "1.0.0",
   "description": "Display classic slider more sexy, in different colors, sizes, and states ",
   "main": "dist/js/bulma-slider.min.js",
   "style": "dist/css/bulma-slider.min.css",
@@ -11,39 +11,40 @@
     "precommit": "npm test",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
-    "watch:test": "jest test/index.test.js -w",
-    "test": "jest test/index.test.js"
+    "watch:test": "jest --testEnvironment jest-environment-jsdom test/index.test.js -w",
+    "test": "jest --testEnvironment jest-environment-jsdom test/index.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wikiki/bulma-slider.git"
+    "url": "git+https://github.com/uk-taniyama/bulma-range.git"
   },
   "keywords": [
     "Bulma",
     "bulma",
     "bulma.io",
     "extensions",
-    "slider"
+    "range"
   ],
-  "author": "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)",
+  "author": "uk-taniyama <uk.taniyama@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Wikiki/bulma-slider/issues"
+    "url": "https://github.com/uk-taniyama/bulma-range/issues"
   },
-  "homepage": "https://github.com/Wikiki/bulma-slider#readme",
+  "homepage": "https://github.com/uk-taniyama/bulma-range#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/plugin-proposal-object-rest-spread": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
-    "ansi-colors": "^4.1.1",
-    "autoprefixer": "^10.4.2",
-    "babel-jest": "^27.4.6",
-    "babel-loader": "^8.2.3",
-    "bulma": "^0.9.3",
-    "camelcase": "^6.3.0",
-    "commitizen": "^4.2.4",
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.19.4",
+    "@babel/preset-env": "^7.19.4",
+    "ansi-colors": "^4.1.3",
+    "autoprefixer": "^10.4.12",
+    "babel-jest": "^29.2.1",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "bulma": "^0.9.4",
+    "camelcase": "6.3.0",
+    "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "del": "^6.0.0",
+    "del": "6.1.1",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -53,12 +54,13 @@
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "jest": "^27.4.7",
-    "regenerator-runtime": "^0.13.9",
-    "sass": "^1.48.0",
-    "semantic-release": "^18.0.1",
+    "jest": "^29.2.1",
+    "jest-environment-jsdom": "^29.2.1",
+    "regenerator-runtime": "^0.13.10",
+    "sass": "^1.55.0",
+    "semantic-release": "^19.0.5",
     "travis-deploy-once": "^5.0.11",
-    "webpack": "^5.66.0",
+    "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   },
   "config": {

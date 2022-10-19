@@ -4,29 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bulmaSlider</title>
+    <title>bulma-range</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/bulma-slider.min.css">
+    <link rel="stylesheet" href="../dist/css/bulma-range.min.css">
 </head>
 
 <body>
-    <input class="slider is-fullwidth" step="1" min="0" max="100" value="50" type="range">
+    <h4>range is-fullwidth</h4>
+    <input class="range is-fullwidth" step="1" min="0" max="100" value="50" type="range">
 
-    <input class="slider is-fullwidth is-success" step="1" min="0" max="100" value="50" type="range">
+    <h4>range is-fullwidth is-primary</h4>
+    <input class="range is-fullwidth is-primary" step="1" min="0" max="100" value="50" type="range">
 
-    <input class="slider is-fullwidth is-warning" step="1" min="0" max="100" value="50" type="range">
+    <h4>range is-fullwidth is-success</h4>
+    <input class="range is-fullwidth is-success" step="1" min="0" max="100" value="50" type="range">
 
-    <input class="slider is-fullwidth is-danger" step="1" min="0" max="100" value="50" type="range">
+    <h4>range is-fullwidth is-warning</h4>
+    <input class="range is-fullwidth is-warning" step="1" min="0" max="100" value="50" type="range">
 
-    <input class="slider is-fullwidth is-info" step="1" min="0" max="100" value="50" type="range">
+    <h4>range is-fullwidth is-danger</h4>
+    <input class="range is-fullwidth is-danger" step="1" min="0" max="100" value="50" type="range">
 
-    <input id="sliderWithValue" class="slider has-output is-fullwidth" min="0" max="100" value="50" step="1" type="range">
-    <output for="sliderWithValue">50</output>
+    <h4>range is-fullwidth is-info</h4>
+    <input class="range is-fullwidth is-info" step="1" min="0" max="100" value="50" type="range">
 
-    <script src="js/bulma-slider.min.js"></script>
+    <h4>range is-fullwidth is-info is-small</h4>
+    <input class="range is-fullwidth is-info is-small" step="1" min="0" max="100" value="50" type="range">
+
+    <h4>range is-fullwidth is-info is-normal</h4>
+    <input class="range is-fullwidth is-info is-normal" step="1" min="0" max="100" value="50" type="range">
+
+    <h4>range is-fullwidth is-info is-medium</h4>
+    <input class="range is-fullwidth is-info is-medium" step="1" min="0" max="100" value="50" type="range">
+
+    <h4>range is-fullwidth is-info is-large</h4>
+    <input class="range is-fullwidth is-info is-large" step="1" min="0" max="100" value="50" type="range">
+
+    <h4>range is-fullwidth is-info is-circle</h4>
+    <input class="range is-fullwidth is-info is-circle" step="1" min="0" max="100" value="50" type="range">
+
+    <h4>range has-output is-fullwidth</h4>
+    <input id="rangeWithValue" class="range has-output is-fullwidth" min="0" max="100" value="50" step="1" type="range">
+    <output for="rangeWithValue">50</output>
+
+    <script src="../dist/js/bulma-range.min.js"></script>
     <script>
-        bulmaSlider.attach();
+        bulmaRange.attach();
     </script>
 </body>
 

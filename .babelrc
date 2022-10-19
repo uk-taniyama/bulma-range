@@ -21,7 +21,7 @@
     "test": {
       "presets": [
         [
-          "env"
+          "@babel/preset-env"
         ]
       ]
     }

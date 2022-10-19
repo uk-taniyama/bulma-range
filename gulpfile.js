@@ -66,7 +66,7 @@ gulp.task('build:styles', function () {
 				style: config.sass.output.format,
 				trace: false,
 				loadPath: [config.sass.source],
-				includePaths: ['node_modules/bulma/sass/utilities/']
+				includePaths: ['node_modules', 'node_modules/bulma/sass/utilities/']
 			}))
 			.pipe(concat(config.sass.output.filename + (config.sass.output.format === 'compressed' ? '.min' : '') + '.css'))
 			.pipe(postcss([autoprefixer({ browsers: pkg.broswers })]))
@@ -108,6 +108,7 @@ gulp.task('build:scripts', function () {
 		return gulp
 			.src(config.javascript.source + config.javascript.input)
 			.pipe(webpackStream({
+				mode: 'production',
 				output: {
 					filename: config.javascript.output.filename + '.js',
 					library: config.javascript.output.name,
