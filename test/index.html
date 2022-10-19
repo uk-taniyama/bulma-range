@@ -11,6 +11,20 @@
 </head>
 
 <body>
+<nav class="navbar">
+    <div class="navbar-start navbar-item">
+        <a class="button is-primary" href="https://uk-taniyama.github.io/bulma-range/">
+            <span>Home</span>
+        </a>
+        <a class="button is-primary" href="https://github.com/uk-taniyama/bulma-range/">
+            <span>GitHub</span>
+        </a>
+        <a class="button is-primary" href="https://www.npmjs.com/package/bulma-range">
+            <span>npm</span>
+        </a>
+    </div>
+</nav>
+<div class="container">
     <h4>range is-fullwidth</h4>
     <input class="range is-fullwidth" step="1" min="0" max="100" value="50" type="range">
 
@@ -45,13 +59,17 @@
     <input class="range is-fullwidth is-info is-circle" step="1" min="0" max="100" value="50" type="range">
 
     <h4>range has-output is-fullwidth</h4>
-    <input id="rangeWithValue" class="range has-output is-fullwidth" min="0" max="100" value="50" step="1" type="range">
+    <input id="rangeWithValue" class="range is-fullwidth has-output" min="0" max="100" value="50" step="1" type="range">
     <output for="rangeWithValue">50</output>
+
+    <h4>range has-output is-fullwidth</h4>
+    <input id="rangeWithValue2" class="range is-fullwidth has-output is-info" min="0" max="100" value="50" step="1" type="range">
+    <output for="rangeWithValue2">50</output>
 
     <script src="../dist/js/bulma-range.min.js"></script>
     <script>
         bulmaRange.attach();
     </script>
-</body>
+</div></body>
 
 </html>
